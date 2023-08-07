@@ -4,11 +4,13 @@
 - It is useful when you need to extend the functionality of a class in a flexible and reusable way.
 - The pattern involves creating a set of decorator classes that wrap the original class and provide additional features.
 
-📝 Implementation:
+# Implementation
 
-- Let's consider a real-world example where we have a basic iOS application that provides different types of beverages (e.g., coffee).
-- We want to offer various extras or toppings (e.g., milk, sugar) that can be added to the beverage.
+- Let's consider a real-world example where we have a basic iOS application that provides different types of beverages (e.g., coffee , decafCoffe).
+- We want to offer various extras or toppings (e.g., Soy, Caramel) that can be added to the beverage.
 - Instead of creating separate classes for each combination of the beverage and toppings, we'll use the `Decorator` pattern.
+- 
+# Pros & Cons
 
 ✅ Positive aspects:
 
