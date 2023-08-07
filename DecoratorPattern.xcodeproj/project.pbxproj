@@ -13,6 +13,12 @@
 		F8145A0E2A80D7EC003E4BB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8145A0C2A80D7EC003E4BB1 /* Main.storyboard */; };
 		F8145A102A80D7ED003E4BB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8145A0F2A80D7ED003E4BB1 /* Assets.xcassets */; };
 		F8145A132A80D7ED003E4BB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8145A112A80D7ED003E4BB1 /* LaunchScreen.storyboard */; };
+		F8145A1C2A80D810003E4BB1 /* BeverageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145A1B2A80D810003E4BB1 /* BeverageProtocol.swift */; };
+		F8145A1E2A80D851003E4BB1 /* EspressoCoffe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145A1D2A80D851003E4BB1 /* EspressoCoffe.swift */; };
+		F8145A202A80D86E003E4BB1 /* DecafCoffe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145A1F2A80D86E003E4BB1 /* DecafCoffe.swift */; };
+		F8145A222A80D8AD003E4BB1 /* AddOnBaseDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145A212A80D8AD003E4BB1 /* AddOnBaseDecorator.swift */; };
+		F8145A242A80D963003E4BB1 /* SoyDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145A232A80D963003E4BB1 /* SoyDecorator.swift */; };
+		F8145A272A80E01C003E4BB1 /* CaramelDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145A262A80E01C003E4BB1 /* CaramelDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		F8145A0F2A80D7ED003E4BB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8145A122A80D7ED003E4BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8145A142A80D7EE003E4BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8145A1B2A80D810003E4BB1 /* BeverageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageProtocol.swift; sourceTree = "<group>"; };
+		F8145A1D2A80D851003E4BB1 /* EspressoCoffe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspressoCoffe.swift; sourceTree = "<group>"; };
+		F8145A1F2A80D86E003E4BB1 /* DecafCoffe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecafCoffe.swift; sourceTree = "<group>"; };
+		F8145A212A80D8AD003E4BB1 /* AddOnBaseDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOnBaseDecorator.swift; sourceTree = "<group>"; };
+		F8145A232A80D963003E4BB1 /* SoyDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyDecorator.swift; sourceTree = "<group>"; };
+		F8145A262A80E01C003E4BB1 /* CaramelDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaramelDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		F8145A052A80D7EC003E4BB1 /* DecoratorPattern */ = {
 			isa = PBXGroup;
 			children = (
+				F8145A1A2A80D7F6003E4BB1 /* DecoratorExamplePattern */,
 				F8145A062A80D7EC003E4BB1 /* AppDelegate.swift */,
 				F8145A082A80D7EC003E4BB1 /* SceneDelegate.swift */,
 				F8145A0A2A80D7EC003E4BB1 /* ViewController.swift */,
@@ -65,6 +78,43 @@
 				F8145A142A80D7EE003E4BB1 /* Info.plist */,
 			);
 			path = DecoratorPattern;
+			sourceTree = "<group>";
+		};
+		F8145A1A2A80D7F6003E4BB1 /* DecoratorExamplePattern */ = {
+			isa = PBXGroup;
+			children = (
+				F8145A292A80E5DB003E4BB1 /* MyBeverage */,
+				F8145A282A80E5C6003E4BB1 /* Decorators */,
+				F8145A252A80DEAA003E4BB1 /* Protocol */,
+			);
+			path = DecoratorExamplePattern;
+			sourceTree = "<group>";
+		};
+		F8145A252A80DEAA003E4BB1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F8145A1B2A80D810003E4BB1 /* BeverageProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F8145A282A80E5C6003E4BB1 /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				F8145A212A80D8AD003E4BB1 /* AddOnBaseDecorator.swift */,
+				F8145A232A80D963003E4BB1 /* SoyDecorator.swift */,
+				F8145A262A80E01C003E4BB1 /* CaramelDecorator.swift */,
+			);
+			path = Decorators;
+			sourceTree = "<group>";
+		};
+		F8145A292A80E5DB003E4BB1 /* MyBeverage */ = {
+			isa = PBXGroup;
+			children = (
+				F8145A1D2A80D851003E4BB1 /* EspressoCoffe.swift */,
+				F8145A1F2A80D86E003E4BB1 /* DecafCoffe.swift */,
+			);
+			path = MyBeverage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8145A0B2A80D7EC003E4BB1 /* ViewController.swift in Sources */,
+				F8145A202A80D86E003E4BB1 /* DecafCoffe.swift in Sources */,
 				F8145A072A80D7EC003E4BB1 /* AppDelegate.swift in Sources */,
+				F8145A242A80D963003E4BB1 /* SoyDecorator.swift in Sources */,
+				F8145A1C2A80D810003E4BB1 /* BeverageProtocol.swift in Sources */,
+				F8145A272A80E01C003E4BB1 /* CaramelDecorator.swift in Sources */,
+				F8145A1E2A80D851003E4BB1 /* EspressoCoffe.swift in Sources */,
 				F8145A092A80D7EC003E4BB1 /* SceneDelegate.swift in Sources */,
+				F8145A222A80D8AD003E4BB1 /* AddOnBaseDecorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
